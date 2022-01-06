@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41256FAB-C64B-4BAE-8B46-0B0EEE1D129D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Northwind_WinUI</RootNamespace>
+    <AssemblyName>Northwind_WinUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCategoryOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryOperation.Designer.cs">
+      <DependentUpon>frmCategoryOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerOperation.Designer.cs">
+      <DependentUpon>frmCustomerOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeOperation.Designer.cs">
+      <DependentUpon>frmEmployeeOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderOperation.Designer.cs">
+      <DependentUpon>frmOrderOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductOperation.Designer.cs">
+      <DependentUpon>frmProductOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShipperOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShipperOperation.Designer.cs">
+      <DependentUpon>frmShipperOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierOperation.Designer.cs">
+      <DependentUpon>frmSupplierOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCategoryOperation.resx">
+      <DependentUpon>frmCategoryOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerOperation.resx">
+      <DependentUpon>frmCustomerOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeOperation.resx">
+      <DependentUpon>frmEmployeeOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderOperation.resx">
+      <DependentUpon>frmOrderOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductOperation.resx">
+      <DependentUpon>frmProductOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShipperOperation.resx">
+      <DependentUpon>frmShipperOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierOperation.resx">
+      <DependentUpon>frmSupplierOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Northwind_BusinessLayer\Northwind_BusinessLayer.csproj">
+      <Project>{da5ebf4a-b801-4ccf-9862-1503d934ed1f}</Project>
+      <Name>Northwind_BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Northwind_DataLayer\Northwind_DataLayer.csproj">
+      <Project>{7F0555AD-835C-4F9D-A439-B9B8DC3186AB}</Project>
+      <Name>Northwind_DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
